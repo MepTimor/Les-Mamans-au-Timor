@@ -1,0 +1,53 @@
+body {
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 18px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+}
+
+header {
+    padding: 1em;
+}
+
+nav {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#subscribe {
+    width: 30%;
+    text-align: center;
+}
+
+.sub {
+    padding: 0.5em;
+    margin: 1em;
+}
