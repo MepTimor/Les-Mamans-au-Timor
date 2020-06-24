@@ -25,12 +25,13 @@ main {
 }
 
 header {
-    padding: 2em;
+    padding: 2em 0;
     background-color: #3763AD;
     position: fixed;
     top: 0;
     width: 100%;
-    margin: 0, 3em;
+    margin: 0;
+    clear: right
 }
 
 footer {
@@ -42,7 +43,8 @@ h1 {
     font-size: 2em;
 }
 
-#presentation h1 {
+#presentation h1,
+#how h2 {
     margin-bottom: 0;
 }
 
@@ -52,6 +54,7 @@ h2 {
 
 h3 {
     font-size: 1.3em;
+    margin-top: 0;
 }
 
 #welcome {
@@ -62,7 +65,7 @@ h3 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 110%, 100%;
-    padding: 7em 0 3em;
+    padding: 3em 0 3em;
     color: white
 }
 
@@ -138,11 +141,26 @@ button {
     border-radius: 10px;
 }
 
+#christ img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+#christ {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    text-align: center;
+    font-style: italic;
+    font-size: 13px;
+}
+
 .left {
     margin-right: 2em;
 }
 
-.right {
+.right,
+#christ {
     margin-left: 2em;
 }
 
@@ -150,16 +168,17 @@ button {
     nav {
         flex-direction: column;
         align-items: center;
-        margin: 0;
     }
     header {
         padding: 1em;
+        position: relative;
     }
     body {
         font-size: 15px;
     }
     main {
-        padding: 0.5em;
+        padding: 1em;
+        margin-top: 0;
     }
     h1 {
         font-size: 1.5em;
@@ -174,7 +193,7 @@ button {
         color: black;
         width: 100%;
         background-image: none;
-        padding: 2em 0 0;
+        padding: 0;
     }
     .pres {
         flex-direction: column;
