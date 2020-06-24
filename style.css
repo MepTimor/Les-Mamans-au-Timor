@@ -64,7 +64,7 @@ h3 {
     background-image: url(images/decor.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 110%, 100%;
+    background-size: 100%, 100%;
     padding: 3em 0 3em;
     color: white
 }
@@ -164,6 +164,16 @@ button {
     margin-left: 2em;
 }
 
+#thanks {
+    background-image: url(images/iletimor.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%, 100%;
+    padding: 1.5em 4em;
+    color: #F7BD45;
+    font-size: 4em;
+}
+
 @media screen and (max-width:767px) {
     nav {
         flex-direction: column;
@@ -214,5 +224,9 @@ button {
     }
     .text {
         width: 80%;
+    }
+    #thanks {
+        padding: 1.5em 2em;
+        font-size: 2em;
     }
 }
