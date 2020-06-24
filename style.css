@@ -172,6 +172,7 @@ button {
     padding: 1.5em 4em;
     color: #F7BD45;
     font-size: 4em;
+    margin-top: 0.5em;
 }
 
 @media screen and (max-width:767px) {
@@ -228,5 +229,6 @@ button {
     #thanks {
         padding: 1.5em 2em;
         font-size: 2em;
+        margin-top: 0;
     }
 }
