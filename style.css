@@ -1,6 +1,7 @@
 body {
     font-family: 'Noto Sans HK', sans-serif;
     font-size: 18px;
+    text-align: justify;
 }
 
 section {
@@ -18,11 +19,62 @@ h3 {
 main {
     display: flex;
     flex-direction: column;
-    margin: 3em;
+    margin-top: 100px;
+    background-color: rgb(244, 245, 247);
+    padding: 3em;
 }
 
 header {
-    padding: 1em;
+    padding: 2em;
+    background-color: #3763AD;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0, 3em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(images/decor.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 110%, 100%;
+    padding: 3em 0;
+    color: white
+}
+
+#presentation {
+    width: 90%;
+}
+
+.text {
+    text-align: center;
+    width: 60%;
+}
+
+.image {
+    width: 15%;
+    height: 10%;
+}
+
+header a {
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover,
+.active {
+    color: #F7BD45;
 }
 
 nav {
@@ -44,6 +96,7 @@ button {
 }
 
 #subscribe {
+    display: none;
     width: 30%;
     text-align: center;
 }
@@ -56,4 +109,22 @@ button {
 .doc {
     font-weight: bold;
     color: blue
+}
+
+.pres {
+    display: flex;
+    align-items: center;
+}
+
+#presentation img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.left {
+    margin-right: 2em;
+}
+
+.right {
+    margin-left: 2em;
 }
