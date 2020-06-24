@@ -21,7 +21,7 @@ main {
     flex-direction: column;
     margin-top: 100px;
     background-color: rgb(244, 245, 247);
-    padding: 3em;
+    padding: 0 3em 3em;
 }
 
 header {
@@ -42,9 +42,12 @@ h1 {
     font-size: 2em;
 }
 
+#presentation h1 {
+    margin-bottom: 0;
+}
+
 h2 {
     font-size: 1.5em;
-    margin-bottom: 0;
 }
 
 h3 {
@@ -59,7 +62,7 @@ h3 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 110%, 100%;
-    padding: 3em 0;
+    padding: 7em 0 3em;
     color: white
 }
 
@@ -84,6 +87,7 @@ header a {
 }
 
 header a:hover,
+header a:focus,
 .active {
     color: #F7BD45;
 }
@@ -122,9 +126,11 @@ button {
     color: blue
 }
 
-.pres {
+.pres,
+#reverse {
     display: flex;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 #presentation img {
@@ -138,4 +144,55 @@ button {
 
 .right {
     margin-left: 2em;
+}
+
+@media screen and (max-width:767px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    header {
+        padding: 1em;
+    }
+    body {
+        font-size: 15px;
+    }
+    main {
+        padding: 0.5em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    #welcome {
+        color: black;
+        width: 100%;
+        background-image: none;
+        padding: 2em 0 0;
+    }
+    .pres {
+        flex-direction: column;
+    }
+    #reverse {
+        flex-direction: column-reverse;
+    }
+    #presentation {
+        padding: 0 0.5em;
+    }
+    #presentation img {
+        width: 80%;
+        border-radius: 10px;
+    }
+    .image {
+        display: none
+    }
+    .text {
+        width: 80%;
+    }
 }
