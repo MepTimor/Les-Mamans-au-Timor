@@ -33,8 +33,18 @@ header {
     margin: 0, 3em;
 }
 
+footer {
+    background-color: #3763AD;
+    padding: 2em;
+}
+
 h1 {
     font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -55,6 +65,7 @@ h3 {
 
 #presentation {
     width: 90%;
+    padding-top: 100px;
 }
 
 .text {
