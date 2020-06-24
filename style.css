@@ -36,7 +36,20 @@ header {
 
 footer {
     background-color: #3763AD;
-    padding: 2em;
+    padding: 3.5em 0 1em;
+    text-align: center;
+    font-size: 13px;
+    color: #F7BD45;
+    font-weight: bold;
+}
+
+footer a {
+    color: #F7BD45;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: white;
 }
 
 h1 {
